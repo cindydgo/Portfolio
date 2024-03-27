@@ -1,0 +1,71 @@
+.navbar {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    backdrop-filter: blur(15px) !important;
+}
+
+.navbar-top {
+    background: #212529;
+}
+
+.navbar-nav a {
+    color: #ffffff;
+}
+
+.logo {
+    background: url(../../assets/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+    animation: logo-spin 1s forwards;
+}
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+    animation: logo-spin 1s forwards;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar-toggler {
+    width: 2.25em;
+    height: 2em;
+    border: 2px solid #ffffff !important;
+}
+
+.navbar-toggler-icon {
+    display: none !important;
+}
+
+.navbar-toggle-icon {
+    display: none;
+}
+
+@media (max-width: 768px){
+    .navbar-toggle-icon {
+        width: 2em;
+        height: 2em;
+        display: flex;
+        color: #ffffff;
+        position: absolute;
+        top: 27px;
+        right: 17px;
+        z-index: -1;
+    }
+}
+
+
+

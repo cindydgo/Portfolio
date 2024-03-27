@@ -1,0 +1,13 @@
+.rfm-marquee-container {
+    height: 100vh !important;
+    max-height: 130px;
+    overflow: hidden;
+}
+
+.skills-container img {
+    height: 6em;
+}
+
+.skills-icon {
+    gap: 0 15px;
+}

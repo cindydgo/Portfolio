@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'La Belle Aurore';
+    src: url(../../assets/fonts/LaBelleAurore.woff) format('woff'),
+    url(../../assets/fonts/LaBelleAurore.woff2) format('woff2');
+}
+
+.about-text::before {
+    content: '<p>';
+    font-family: La Belle Aurore;
+}
+
+.about-text::after {
+    content: '</p>';
+    font-family: La Belle Aurore;
+}
+
+@media (max-width: 767px) {
+    p {
+        font-size: 18px;
+    }
+}
+
+
+h3::before{
+    content: '<h3>';
+    font-family: La Belle Aurore;
+}
+
+h3::after {
+    content: '</h3>';
+    font-family: La Belle Aurore;
+}
+
+@media (max-width: 768px) {
+    .about-container{
+        padding: 120px 30px 100px;
+    }
+}
+
+.about-row {
+    width: 100%;
+    max-width: 910px;
+    padding: 2em;
+    border-radius: 20px;
+    border: none;
+    box-shadow: #11111a1a 0 4px 16px,#11111a1a 0 8px 24px,#11111a1a 0 16px 56px;
+}
+
+.about-bg {
+    background: url(../../assets/aboutBg.png) no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 767px) {
+    .about-bg {
+        display: none;
+    }
+}
+
+.about-col {
+    color: #ffffff;
+    gap: 10px !important;
+	transform: scale(1);
+	animation: pulse 1.5s;
+}
+
+@keyframes pulse {
+	from {
+		transform: scale(0.95);
+	}
+
+    40% {
+        transform: scale(1.1);
+    }
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
