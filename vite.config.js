@@ -3,11 +3,20 @@ import react from '@vitejs/plugin-react'
 import Pages from 'vite-plugin-pages'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [
-    react(),
-    Pages({
-      dirs: 'src/pages',
-    })
-  ],
+export default defineConfig(({ command }) => { 
+  const config = {
+    plugins: [
+      react(),
+      Pages({
+        dirs: 'src/pages',
+      })
+    ],
+    base: '/',
+  }
+  
+  if (command !== 'serve') {
+    config.base = '/Portfolio/'
+  }
+
+  return config
 })
